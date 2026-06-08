@@ -1,0 +1,194 @@
+<section class="services-section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-label">Servicios principales</span>
+
+      <h2>Soluciones patrimoniales diseñadas para cada etapa.</h2>
+
+      <p>
+        Desde el diagnóstico inicial hasta la implementación y seguimiento,
+        acompañamos decisiones clave con una mirada integral y estratégica.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card featured">
+        <div class="icon-placeholder"></div>
+        <span class="card-number">01</span>
+        <h3>Planificación patrimonial</h3>
+        <p>
+          Ordenamos activos, objetivos y prioridades para construir una estrategia
+          patrimonial clara, eficiente y sostenible.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="icon-placeholder"></div>
+        <span class="card-number">02</span>
+        <h3>Estrategia de inversión</h3>
+        <p>
+          Diseñamos una estructura de inversión alineada al perfil, horizonte,
+          liquidez y objetivos de cada cliente.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="icon-placeholder"></div>
+        <span class="card-number">03</span>
+        <h3>Protección y continuidad</h3>
+        <p>
+          Ayudamos a proteger el patrimonio frente a riesgos familiares,
+          empresariales, financieros y sucesorios.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="icon-placeholder"></div>
+        <span class="card-number">04</span>
+        <h3>Sucesión y legado</h3>
+        <p>
+          Acompañamos procesos de planificación hereditaria y continuidad familiar
+          con orden, anticipación y visión de futuro.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-section {
+    background: #f5f7fa;
+    color: #07111f;
+    padding: 120px 0;
+  }
+
+  .container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+  }
+
+  .section-heading {
+    max-width: 860px;
+    margin-bottom: 64px;
+  }
+
+  .section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #1a6d9f;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+  }
+
+  .section-heading p {
+    max-width: 720px;
+    margin: 26px 0 0;
+    color: rgba(7, 17, 31, 0.68);
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .service-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 420px;
+    padding: 30px;
+    border-radius: 30px;
+    background: #ffffff;
+    border: 1px solid rgba(7, 17, 31, 0.08);
+    box-shadow: 0 24px 70px rgba(7, 17, 31, 0.08);
+  }
+
+  .service-card.featured {
+    background:
+      radial-gradient(circle at 80% 0%, rgba(143, 211, 255, 0.22), transparent 36%),
+      linear-gradient(135deg, #07111f 0%, #0b1d30 100%);
+    color: #ffffff;
+  }
+
+  .service-card.featured p {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .service-card.featured .card-number {
+    color: #8fd3ff;
+  }
+
+  .service-card.featured .icon-placeholder {
+    background:
+      linear-gradient(135deg, rgba(143, 211, 255, 0.36), rgba(255, 255, 255, 0.12));
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+
+  .icon-placeholder {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    margin-bottom: 72px;
+    background:
+      linear-gradient(135deg, #d5dbe5 0%, #eef1f5 100%);
+    border: 1px solid rgba(7, 17, 31, 0.08);
+  }
+
+  .card-number {
+    display: block;
+    margin-bottom: 18px;
+    color: #1a6d9f;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+  }
+
+  .service-card h3 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.08;
+    letter-spacing: -0.05em;
+  }
+
+  .service-card p {
+    margin: 18px 0 0;
+    color: rgba(7, 17, 31, 0.68);
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  @media (max-width: 1040px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 680px) {
+    .services-section {
+      padding: 86px 0;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .service-card {
+      min-height: auto;
+    }
+
+    .icon-placeholder {
+      margin-bottom: 44px;
+    }
+  }
+</style>
