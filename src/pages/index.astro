@@ -1,6 +1,8 @@
 ---
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
+import IntroSection from "../components/IntroSection.astro";
+import WhySection from "../components/WhySection.astro";
 ---
 
 <html lang="es">
@@ -15,6 +17,8 @@ import Hero from "../components/Hero.astro";
 
     <main>
       <Hero />
+      <IntroSection />
+      <WhySection />
     </main>
   </body>
 </html>
@@ -24,10 +28,19 @@ import Hero from "../components/Hero.astro";
     box-sizing: border-box;
   }
 
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
   :global(body) {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #07111f;
     color: #ffffff;
+  }
+
+  :global(img) {
+    max-width: 100%;
+    display: block;
   }
 </style>
