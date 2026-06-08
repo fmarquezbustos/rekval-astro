@@ -1,0 +1,277 @@
+<section class="support-section">
+  <div class="container support-grid">
+    <div class="support-visual">
+      <div class="visual-card main-card">
+        <span>Seguimiento patrimonial</span>
+        <strong>360°</strong>
+        <p>Revisión, ajuste y acompañamiento continuo.</p>
+      </div>
+
+      <div class="floating-card card-one">
+        <span>Revisión periódica</span>
+      </div>
+
+      <div class="floating-card card-two">
+        <span>Hoja de ruta</span>
+      </div>
+    </div>
+
+    <div class="support-content">
+      <span class="section-label">Acompañamiento permanente</span>
+
+      <h2>No se trata solo de diseñar una estrategia, sino de acompañarla en el tiempo.</h2>
+
+      <p>
+        El patrimonio cambia junto con la vida, la familia, los negocios y el
+        mercado. Por eso nuestro trabajo no termina con una recomendación inicial:
+        acompañamos, revisamos y ajustamos la estrategia cuando es necesario.
+      </p>
+
+      <div class="process-list">
+        <div class="process-item">
+          <span>01</span>
+          <div>
+            <h3>Diagnóstico inicial</h3>
+            <p>Entendemos la situación actual, prioridades, riesgos y objetivos.</p>
+          </div>
+        </div>
+
+        <div class="process-item">
+          <span>02</span>
+          <div>
+            <h3>Diseño estratégico</h3>
+            <p>Construimos una propuesta clara, ordenada y alineada al perfil del cliente.</p>
+          </div>
+        </div>
+
+        <div class="process-item">
+          <span>03</span>
+          <div>
+            <h3>Seguimiento y ajustes</h3>
+            <p>Revisamos avances, cambios de contexto y nuevas decisiones relevantes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .support-section {
+    background: #ffffff;
+    color: #07111f;
+    padding: 120px 0;
+  }
+
+  .container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+  }
+
+  .support-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 76px;
+    align-items: center;
+  }
+
+  .support-visual {
+    position: relative;
+    min-height: 560px;
+    border-radius: 38px;
+    background:
+      radial-gradient(circle at 25% 20%, rgba(143, 211, 255, 0.32), transparent 34%),
+      linear-gradient(135deg, #e4e9f1 0%, #f5f7fa 100%);
+    border: 1px solid rgba(7, 17, 31, 0.08);
+    box-shadow: 0 34px 90px rgba(7, 17, 31, 0.12);
+    overflow: hidden;
+  }
+
+  .support-visual::before {
+    content: "";
+    position: absolute;
+    inset: 44px;
+    border-radius: 30px;
+    border: 1px solid rgba(7, 17, 31, 0.08);
+  }
+
+  .visual-card {
+    position: absolute;
+    left: 44px;
+    right: 44px;
+    bottom: 44px;
+    padding: 34px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(7, 17, 31, 0.08);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 24px 70px rgba(7, 17, 31, 0.12);
+  }
+
+  .visual-card span {
+    display: block;
+    margin-bottom: 18px;
+    color: #1a6d9f;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .visual-card strong {
+    display: block;
+    font-size: 86px;
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+  }
+
+  .visual-card p {
+    margin: 18px 0 0;
+    color: rgba(7, 17, 31, 0.68);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .floating-card {
+    position: absolute;
+    padding: 16px 20px;
+    border-radius: 999px;
+    background: #07111f;
+    color: #ffffff;
+    box-shadow: 0 18px 50px rgba(7, 17, 31, 0.22);
+  }
+
+  .floating-card span {
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .card-one {
+    top: 76px;
+    left: 54px;
+  }
+
+  .card-two {
+    top: 160px;
+    right: 54px;
+    background: #1a6d9f;
+  }
+
+  .section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #1a6d9f;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+  }
+
+  .support-content > p {
+    max-width: 680px;
+    margin: 28px 0 0;
+    color: rgba(7, 17, 31, 0.68);
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  .process-list {
+    display: grid;
+    gap: 22px;
+    margin-top: 44px;
+  }
+
+  .process-item {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 22px;
+    padding: 26px;
+    border-radius: 26px;
+    background: #f5f7fa;
+    border: 1px solid rgba(7, 17, 31, 0.08);
+  }
+
+  .process-item > span {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    background: #07111f;
+    color: #8fd3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+  }
+
+  .process-item h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+  }
+
+  .process-item p {
+    margin: 10px 0 0;
+    color: rgba(7, 17, 31, 0.66);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 940px) {
+    .support-section {
+      padding: 86px 0;
+    }
+
+    .support-grid {
+      grid-template-columns: 1fr;
+      gap: 44px;
+    }
+
+    .support-visual {
+      min-height: 460px;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .support-visual {
+      min-height: 420px;
+    }
+
+    .visual-card {
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      padding: 26px;
+    }
+
+    .visual-card strong {
+      font-size: 68px;
+    }
+
+    .floating-card {
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      margin: 22px;
+      display: inline-flex;
+    }
+
+    .card-two {
+      margin-top: 0;
+    }
+
+    .process-item {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

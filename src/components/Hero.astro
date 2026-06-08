@@ -1,52 +1,53 @@
 <section class="hero">
-  <div class="container hero-grid">
+  <div class="container">
     <div class="hero-content">
-      <span class="eyebrow">Gestión Patrimonial 360°</span>
+      <span class="eyebrow">REKVAL</span>
 
-      <h1>Protegemos, ordenamos y proyectamos tu patrimonio.</h1>
+      <h1>Construimos estrategias para ordenar, proteger y proyectar tu patrimonio.</h1>
 
       <p>
-        En Rekval Global acompañamos a personas, familias y empresas en la
-        planificación, protección y crecimiento de su patrimonio con una mirada
-        estratégica, cercana y de largo plazo.
+        REKVAL reúne soluciones especializadas de inversión, ahorro, protección
+        patrimonial y activos inmobiliarios para personas, familias y empresas.
       </p>
 
       <div class="hero-actions">
-        <a class="btn primary" href="#">Conversemos</a>
-        <a class="btn secondary" href="#">Ver servicios</a>
+        <a class="btn primary" href="#areas">Conoce nuestras áreas</a>
+        <a class="btn secondary" href="#contacto">Conversemos</a>
       </div>
-    </div>
-
-    <div class="hero-card">
-      <p>Planificación</p>
-      <p>Inversión</p>
-      <p>Protección</p>
-      <p>Sucesión</p>
     </div>
   </div>
 </section>
 
 <style>
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 140px 0 80px;
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(7, 17, 31, 0.86) 0%,
+        rgba(7, 17, 31, 0.76) 34%,
+        rgba(7, 17, 31, 0.46) 62%,
+        rgba(7, 17, 31, 0.2) 100%
+      ),
+      url("/images/hero-rekval.png");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+
   .container {
     width: min(1120px, 92%);
     margin: 0 auto;
   }
 
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 140px 0 80px;
-    background:
-      radial-gradient(circle at 80% 20%, rgba(55, 112, 145, 0.45), transparent 34%),
-      linear-gradient(135deg, #07111f 0%, #0c1e32 48%, #122c42 100%);
-  }
-
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    align-items: center;
-    gap: 64px;
+  .hero-content {
+    width: 100%;
+    max-width: 820px;
   }
 
   .eyebrow {
@@ -54,41 +55,42 @@
     margin-bottom: 20px;
     color: #8fd3ff;
     font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
+    font-weight: 900;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
   }
 
   h1 {
-    max-width: 760px;
+    max-width: 820px;
     margin: 0;
+    color: #ffffff;
     font-size: clamp(42px, 6vw, 78px);
     line-height: 0.95;
     letter-spacing: -0.06em;
   }
 
-  .hero-content p {
-    max-width: 620px;
-    margin: 28px 0 0;
-    color: rgba(255, 255, 255, 0.78);
-    font-size: 18px;
-    line-height: 1.7;
+  p {
+    max-width: 660px;
+    margin: 30px 0 0;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 20px;
+    line-height: 1.65;
   }
 
   .hero-actions {
     display: flex;
     gap: 14px;
-    margin-top: 36px;
+    margin-top: 38px;
   }
 
   .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 48px;
+    min-height: 50px;
     padding: 0 24px;
     border-radius: 999px;
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: none;
   }
 
@@ -98,38 +100,28 @@
   }
 
   .secondary {
-    border: 1px solid rgba(255, 255, 255, 0.26);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.06);
     color: #ffffff;
   }
 
-  .hero-card {
-    padding: 34px;
-    border-radius: 28px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(18px);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
-  }
-
-  .hero-card p {
-    margin: 0;
-    padding: 22px 0;
-    font-size: 24px;
-    font-weight: 700;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  }
-
-  .hero-card p:last-child {
-    border-bottom: 0;
-  }
-
   @media (max-width: 820px) {
-    .hero-grid {
-      grid-template-columns: 1fr;
+    .hero {
+      min-height: 760px;
+      padding-top: 120px;
+      background-image:
+        linear-gradient(
+          180deg,
+          rgba(7, 17, 31, 0.9) 0%,
+          rgba(7, 17, 31, 0.74) 48%,
+          rgba(7, 17, 31, 0.9) 100%
+        ),
+        url("/images/hero-rekval.png");
+      background-position: center;
     }
 
-    .hero {
-      padding-top: 120px;
+    p {
+      font-size: 18px;
     }
 
     .hero-actions {

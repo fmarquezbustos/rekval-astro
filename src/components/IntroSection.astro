@@ -1,25 +1,32 @@
-<section class="intro-section">
+<section id="quienes-somos" class="intro-section">
   <div class="container intro-grid">
     <div class="intro-copy">
-      <span class="section-label">Rekval Global</span>
+      <span class="section-label">Quiénes somos</span>
 
-      <h2>Una mirada integral para ordenar, proteger y proyectar tu patrimonio.</h2>
+      <h2>Una visión integral para cada etapa de tu patrimonio.</h2>
 
       <p>
-        Acompañamos a personas, familias y empresas en la toma de decisiones
-        patrimoniales con una visión estratégica, independiente y de largo plazo.
+        En REKVAL entendemos que construir patrimonio no significa solamente
+        elegir productos financieros.
       </p>
 
       <p>
-        Nuestro enfoque combina planificación, inversión, protección y sucesión,
-        permitiendo construir una hoja de ruta clara para cada etapa financiera y
-        familiar.
+        Significa comprender tu realidad, definir prioridades y tomar decisiones
+        coherentes con tus objetivos personales, familiares o empresariales.
+      </p>
+
+      <p>
+        Nuestra marca reúne distintas áreas de especialización para acompañarte
+        según tus necesidades y el momento en que te encuentres.
       </p>
     </div>
 
     <div class="intro-visual">
       <div class="image-placeholder">
-        <span>Imagen / equipo / oficina</span>
+        <div class="visual-content">
+          <span>REKVAL</span>
+          <strong>Una marca. Distintas áreas de especialización.</strong>
+        </div>
       </div>
     </div>
   </div>
@@ -27,8 +34,8 @@
 
 <style>
   .intro-section {
-    background: #f5f7fa;
-    color: #07111f;
+    background: #f3f5f4;
+    color: #102a43;
     padding: 120px 0;
   }
 
@@ -47,25 +54,25 @@
   .section-label {
     display: inline-block;
     margin-bottom: 18px;
-    color: #1a6d9f;
+    color: #0b7a75;
     font-size: 13px;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: 0.14em;
     text-transform: uppercase;
   }
 
   h2 {
     margin: 0;
+    max-width: 760px;
     font-size: clamp(36px, 5vw, 58px);
     line-height: 1.02;
     letter-spacing: -0.05em;
-    max-width: 760px;
   }
 
   p {
     max-width: 620px;
-    margin: 26px 0 0;
-    color: rgba(7, 17, 31, 0.72);
+    margin: 24px 0 0;
+    color: rgba(16, 42, 67, 0.72);
     font-size: 18px;
     line-height: 1.75;
   }
@@ -76,38 +83,80 @@
   }
 
   .image-placeholder {
+    position: relative;
     width: 100%;
-    min-height: 480px;
+    min-height: 500px;
     border-radius: 34px;
+    overflow: hidden;
     background:
-      linear-gradient(135deg, #d9dee7 0%, #eef1f5 100%);
-    border: 1px solid rgba(7, 17, 31, 0.08);
-    box-shadow: 0 30px 80px rgba(7, 17, 31, 0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      radial-gradient(circle at 75% 18%, rgba(11, 122, 117, 0.22), transparent 34%),
+      linear-gradient(135deg, #102a43 0%, #173955 52%, #0b7a75 100%);
+    border: 1px solid rgba(16, 42, 67, 0.08);
+    box-shadow: 0 30px 80px rgba(16, 42, 67, 0.14);
   }
 
-  .image-placeholder span {
-    color: rgba(7, 17, 31, 0.38);
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+  .image-placeholder::before {
+    content: "";
+    position: absolute;
+    inset: 34px;
+    border-radius: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .image-placeholder::after {
+    content: "";
+    position: absolute;
+    right: -90px;
+    bottom: -90px;
+    width: 280px;
+    height: 280px;
+    border-radius: 999px;
+    background: rgba(221, 237, 234, 0.18);
+    filter: blur(4px);
+  }
+
+  .visual-content {
+    position: absolute;
+    left: 42px;
+    right: 42px;
+    bottom: 42px;
+    z-index: 2;
+    padding: 32px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(16px);
+  }
+
+  .visual-content span {
+    display: block;
+    margin-bottom: 16px;
+    color: #ddecea;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+  }
+
+  .visual-content strong {
+    display: block;
+    color: #ffffff;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1;
+    letter-spacing: -0.05em;
   }
 
   @media (max-width: 900px) {
+    .intro-section {
+      padding: 86px 0;
+    }
+
     .intro-grid {
       grid-template-columns: 1fr;
       gap: 44px;
     }
 
-    .intro-section {
-      padding: 86px 0;
-    }
-
     .image-placeholder {
-      min-height: 340px;
+      min-height: 380px;
     }
   }
 </style>
