@@ -41,20 +41,6 @@ const socios = [
   },
 ];
 
-const filosofia = [
-  {
-    title: "Mirada integral",
-    text: "Entendemos el patrimonio como un sistema: personas, familia, empresa, inversión, protección y activos reales.",
-  },
-  {
-    title: "Criterio antes que producto",
-    text: "Cada recomendación debe responder a una necesidad concreta y a una estrategia comprensible para el cliente.",
-  },
-  {
-    title: "Relación de largo plazo",
-    text: "Acompañamos decisiones que evolucionan junto con las etapas personales, familiares y empresariales.",
-  },
-];
 ---
 
 <html lang="es">
@@ -68,52 +54,11 @@ const filosofia = [
     <Header />
 
     <main>
-      <section class="about-hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <span class="section-label">Quiénes somos</span>
-            <h1>Una marca matriz para ordenar decisiones patrimoniales con visión de largo plazo.</h1>
-            <p>
-              REKVAL reúne experiencia financiera, patrimonial, internacional e
-              inmobiliaria para acompañar a personas, familias y empresas desde una
-              mirada integrada.
-            </p>
-          </div>
-
-          <div class="hero-panel">
-            <span>REKVAL</span>
-            <strong>Una marca. Distintas áreas de especialización.</strong>
-          </div>
-        </div>
-      </section>
-
-      <section class="intro-band">
-        <div class="container intro-layout">
-          <div>
-            <span class="section-label">Nuestra forma de mirar</span>
-            <h2>Construir patrimonio no es acumular productos: es tomar decisiones coherentes.</h2>
-          </div>
-
-          <div class="intro-copy">
-            <p>
-              Creemos que una estrategia patrimonial debe partir por comprender la
-              realidad de cada cliente: sus objetivos, sus prioridades, su etapa de
-              vida y el tipo de decisiones que necesita tomar.
-            </p>
-            <p>
-              Desde esa base, REKVAL conecta distintas unidades especializadas para
-              entregar orientación, implementación y seguimiento con un criterio
-              común.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section class="partners-section">
         <div class="container">
           <div class="section-heading">
             <span class="section-label">Socios</span>
-            <h2>Un equipo con experiencia complementaria para abordar el patrimonio desde distintos ángulos.</h2>
+            <h1>Un equipo con experiencia complementaria para abordar el patrimonio desde distintos ángulos.</h1>
           </div>
 
           <div class="partners-grid">
@@ -125,29 +70,6 @@ const filosofia = [
                 <span>{socio.role}</span>
                 <h3>{socio.name}</h3>
                 <p>{socio.bio}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section class="philosophy-section">
-        <div class="container philosophy-grid">
-          <div class="philosophy-heading">
-            <span class="section-label">Nuestra filosofía</span>
-            <h2>Claridad, especialización y acompañamiento permanente.</h2>
-            <p>
-              Nuestro trabajo busca que cada decisión tenga un propósito dentro de
-              una planificación patrimonial mayor.
-            </p>
-          </div>
-
-          <div class="philosophy-list">
-            {filosofia.map((item, index) => (
-              <article>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
               </article>
             ))}
           </div>
