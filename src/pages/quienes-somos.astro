@@ -239,8 +239,7 @@ const filosofia = [
     letter-spacing: -0.055em;
   }
 
-  .intro-band,
-  .partners-section {
+  .intro-band {
     background: #f3f5f4;
     color: #102a43;
   }
@@ -256,7 +255,6 @@ const filosofia = [
   }
 
   .intro-layout .section-label,
-  .partners-section .section-label,
   .philosophy-section .section-label {
     color: #0b7a75;
   }
@@ -281,6 +279,15 @@ const filosofia = [
 
   .partners-section {
     padding: 120px 0;
+    background:
+      radial-gradient(circle at 18% 12%, rgba(143, 211, 255, 0.16), transparent 30%),
+      radial-gradient(circle at 82% 18%, rgba(11, 122, 117, 0.26), transparent 34%),
+      linear-gradient(135deg, #07111f 0%, #102a43 58%, #0b2f44 100%);
+    color: #ffffff;
+  }
+
+  .partners-section .section-label {
+    color: #8fd3ff;
   }
 
   .section-heading {
@@ -298,10 +305,11 @@ const filosofia = [
     min-height: 420px;
     padding: 34px;
     border-radius: 30px;
-    background: #ffffff;
-    border: 1px solid rgba(16, 42, 67, 0.08);
-    box-shadow: 0 24px 70px rgba(16, 42, 67, 0.08);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.18);
     text-align: center;
+    backdrop-filter: blur(16px);
   }
 
   .partner-image {
@@ -310,8 +318,9 @@ const filosofia = [
     margin: 0 auto 32px;
     border-radius: 999px;
     overflow: hidden;
-    border: 2px solid rgba(11, 122, 117, 0.62);
+    border: 2px solid rgba(143, 211, 255, 0.5);
     background: #102a43;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
   }
 
   .partner-image img {
@@ -323,7 +332,7 @@ const filosofia = [
   .partner-card span {
     display: block;
     margin-bottom: 12px;
-    color: #0b7a75;
+    color: #8fd3ff;
     font-size: 12px;
     font-weight: 900;
     letter-spacing: 0.14em;
@@ -332,7 +341,7 @@ const filosofia = [
 
   .partner-card h3 {
     margin: 0;
-    color: #102a43;
+    color: #ffffff;
     font-size: 28px;
     line-height: 1.08;
     letter-spacing: -0.04em;
