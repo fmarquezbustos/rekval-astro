@@ -13,7 +13,20 @@
 
     <div class="differentiators-grid">
       <article class="differentiator-card">
-        <div class="icon-placeholder"></div>
+        <div class="icon-placeholder" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="13"></circle>
+            <circle cx="24" cy="24" r="4"></circle>
+            <path d="M24 11v9"></path>
+            <path d="M24 28v9"></path>
+            <path d="M11 24h9"></path>
+            <path d="M28 24h9"></path>
+            <path d="m15 15 6 6"></path>
+            <path d="m33 15-6 6"></path>
+            <path d="m15 33 6-6"></path>
+            <path d="m33 33-6-6"></path>
+          </svg>
+        </div>
         <span class="card-number">01</span>
         <h3>Visión integral</h3>
         <p>
@@ -22,7 +35,14 @@
       </article>
 
       <article class="differentiator-card">
-        <div class="icon-placeholder"></div>
+        <div class="icon-placeholder" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <path d="M15 28a10 10 0 1 1 7 3H13l2-3Z"></path>
+            <path d="M29 18a9 9 0 0 1 5 16l1 5h-8a9 9 0 0 1-6-2"></path>
+            <path d="M18 22h8"></path>
+            <path d="M18 26h5"></path>
+          </svg>
+        </div>
         <span class="card-number">02</span>
         <h3>Acompañamiento cercano</h3>
         <p>
@@ -32,7 +52,18 @@
       </article>
 
       <article class="differentiator-card">
-        <div class="icon-placeholder"></div>
+        <div class="icon-placeholder" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <rect x="10" y="10" width="12" height="12" rx="3"></rect>
+            <rect x="26" y="10" width="12" height="12" rx="3"></rect>
+            <rect x="10" y="26" width="12" height="12" rx="3"></rect>
+            <rect x="26" y="26" width="12" height="12" rx="3"></rect>
+            <path d="M22 16h4"></path>
+            <path d="M16 22v4"></path>
+            <path d="M32 22v4"></path>
+            <path d="M22 32h4"></path>
+          </svg>
+        </div>
         <span class="card-number">03</span>
         <h3>Soluciones especializadas</h3>
         <p>
@@ -42,7 +73,19 @@
       </article>
 
       <article class="differentiator-card featured">
-        <div class="icon-placeholder"></div>
+        <div class="icon-placeholder" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <path d="M10 33c6-13 13-17 22-17h6"></path>
+            <path d="m34 11 5 5-5 5"></path>
+            <path d="M12 36h26"></path>
+            <path d="M16 30v6"></path>
+            <path d="M24 24v12"></path>
+            <path d="M32 18v18"></path>
+            <circle cx="16" cy="30" r="2"></circle>
+            <circle cx="24" cy="24" r="2"></circle>
+            <circle cx="32" cy="18" r="2"></circle>
+          </svg>
+        </div>
         <span class="card-number">04</span>
         <h3>Estrategias que evolucionan</h3>
         <p>
@@ -122,19 +165,40 @@
   }
 
   .icon-placeholder {
-    width: 58px;
-    height: 58px;
-    border-radius: 18px;
-    margin-bottom: 74px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 22px;
+    margin-bottom: 58px;
     background:
-      linear-gradient(135deg, #d9e2e8 0%, #edf2f1 100%);
+      linear-gradient(145deg, #eef4f3 0%, #dce6ea 100%);
     border: 1px solid rgba(16, 42, 67, 0.08);
+    color: #0b7a75;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.8),
+      0 18px 44px rgba(16, 42, 67, 0.08);
   }
 
   .featured .icon-placeholder {
     background:
-      linear-gradient(135deg, rgba(143, 211, 255, 0.34), rgba(255, 255, 255, 0.12));
+      linear-gradient(145deg, rgba(143, 211, 255, 0.32), rgba(255, 255, 255, 0.1));
     border-color: rgba(255, 255, 255, 0.16);
+    color: #b8e4ff;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.16),
+      0 22px 58px rgba(0, 0, 0, 0.18);
+  }
+
+  .icon-placeholder svg {
+    width: 38px;
+    height: 38px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
   .card-number {
