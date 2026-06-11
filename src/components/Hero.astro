@@ -30,20 +30,27 @@
     background-image:
       linear-gradient(
         90deg,
-        rgba(7, 17, 31, 0.9) 0%,
-        rgba(7, 17, 31, 0.78) 34%,
-        rgba(7, 17, 31, 0.44) 62%,
-        rgba(7, 17, 31, 0.14) 100%
+        rgba(7, 17, 31, 0.94) 0%,
+        rgba(7, 17, 31, 0.82) 36%,
+        rgba(16, 42, 67, 0.5) 66%,
+        rgba(11, 122, 117, 0.18) 100%
       ),
       linear-gradient(
         180deg,
-        rgba(7, 17, 31, 0.18) 0%,
-        rgba(7, 17, 31, 0.34) 100%
+        rgba(7, 17, 31, 0.16) 0%,
+        rgba(7, 17, 31, 0.42) 100%
       ),
-      url("/images/hero-rekval.png");
+      linear-gradient(
+        135deg,
+        rgba(11, 122, 117, 0.28) 0%,
+        rgba(16, 42, 67, 0.08) 42%,
+        rgba(143, 211, 255, 0.12) 100%
+      ),
+      url("/images/hero-patrimonial.png");
     background-size: cover;
-    background-position: center right;
+    background-position: center, center, center, right 24% center;
     background-repeat: no-repeat;
+    background-blend-mode: normal, multiply, color, normal;
   }
 
   .container {
@@ -146,12 +153,18 @@
       background-image:
         linear-gradient(
           180deg,
-          rgba(7, 17, 31, 0.92) 0%,
-          rgba(7, 17, 31, 0.76) 48%,
-          rgba(7, 17, 31, 0.92) 100%
+          rgba(7, 17, 31, 0.94) 0%,
+          rgba(7, 17, 31, 0.78) 48%,
+          rgba(7, 17, 31, 0.94) 100%
         ),
-        url("/images/hero-rekval.png");
-      background-position: center;
+        linear-gradient(
+          135deg,
+          rgba(11, 122, 117, 0.26) 0%,
+          rgba(143, 211, 255, 0.1) 100%
+        ),
+        url("/images/hero-patrimonial.png");
+      background-position: center, center, center;
+      background-blend-mode: normal, color, normal;
     }
 
     h1 {
