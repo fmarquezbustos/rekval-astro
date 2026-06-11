@@ -8,6 +8,7 @@
       <p>
         REKVAL reúne soluciones especializadas de inversión, ahorro, protección
         patrimonial y activos inmobiliarios para personas, familias y empresas.
+        Cada decisión financiera debe responder a una estrategia clara.
       </p>
 
       <div class="hero-actions">
@@ -29,10 +30,15 @@
     background-image:
       linear-gradient(
         90deg,
-        rgba(7, 17, 31, 0.86) 0%,
-        rgba(7, 17, 31, 0.76) 34%,
-        rgba(7, 17, 31, 0.46) 62%,
-        rgba(7, 17, 31, 0.2) 100%
+        rgba(7, 17, 31, 0.9) 0%,
+        rgba(7, 17, 31, 0.78) 34%,
+        rgba(7, 17, 31, 0.44) 62%,
+        rgba(7, 17, 31, 0.14) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(7, 17, 31, 0.18) 0%,
+        rgba(7, 17, 31, 0.34) 100%
       ),
       url("/images/hero-rekval.png");
     background-size: cover;
@@ -47,32 +53,41 @@
 
   .hero-content {
     width: 100%;
-    max-width: 820px;
+    max-width: 760px;
   }
 
   .eyebrow {
-    display: inline-block;
-    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
     color: #8fd3ff;
     font-size: 14px;
     font-weight: 900;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
   }
 
+  .eyebrow::before {
+    content: "";
+    width: 42px;
+    height: 1px;
+    background: #8fd3ff;
+  }
+
   h1 {
-    max-width: 820px;
+    max-width: 760px;
     margin: 0;
     color: #ffffff;
-    font-size: clamp(42px, 6vw, 78px);
-    line-height: 0.95;
-    letter-spacing: -0.06em;
+    font-size: clamp(48px, 6.4vw, 84px);
+    line-height: 0.94;
+    letter-spacing: -0.065em;
   }
 
   p {
-    max-width: 660px;
+    max-width: 620px;
     margin: 30px 0 0;
-    color: rgba(255, 255, 255, 0.84);
+    color: rgba(255, 255, 255, 0.82);
     font-size: 20px;
     line-height: 1.65;
   }
@@ -80,29 +95,48 @@
   .hero-actions {
     display: flex;
     gap: 14px;
-    margin-top: 38px;
+    margin-top: 40px;
+    flex-wrap: wrap;
   }
 
   .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 50px;
-    padding: 0 24px;
+    min-height: 52px;
+    padding: 0 26px;
     border-radius: 999px;
-    font-weight: 800;
+    font-weight: 850;
     text-decoration: none;
+    transition:
+      transform 0.22s ease,
+      background 0.22s ease,
+      border-color 0.22s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
   }
 
   .primary {
-    background: #ffffff;
-    color: #07111f;
+    background: #0b7a75;
+    color: #ffffff;
+    box-shadow: 0 14px 34px rgba(11, 122, 117, 0.28);
+  }
+
+  .primary:hover {
+    background: #0e8c86;
   }
 
   .secondary {
     border: 1px solid rgba(255, 255, 255, 0.28);
     background: rgba(255, 255, 255, 0.06);
     color: #ffffff;
+  }
+
+  .secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.42);
   }
 
   @media (max-width: 820px) {
@@ -112,12 +146,16 @@
       background-image:
         linear-gradient(
           180deg,
-          rgba(7, 17, 31, 0.9) 0%,
-          rgba(7, 17, 31, 0.74) 48%,
-          rgba(7, 17, 31, 0.9) 100%
+          rgba(7, 17, 31, 0.92) 0%,
+          rgba(7, 17, 31, 0.76) 48%,
+          rgba(7, 17, 31, 0.92) 100%
         ),
         url("/images/hero-rekval.png");
       background-position: center;
+    }
+
+    h1 {
+      font-size: clamp(42px, 12vw, 62px);
     }
 
     p {
@@ -126,7 +164,11 @@
 
     .hero-actions {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: stretch;
+    }
+
+    .btn {
+      width: 100%;
     }
   }
 </style>
