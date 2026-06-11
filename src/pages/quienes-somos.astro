@@ -3,12 +3,42 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 const socios = [
-  { image: "/images/socios/socio6.webp", name: "Socio 6", role: "Socio principal" },
-  { image: "/images/socios/socio5.webp", name: "Socio 5", role: "Socia principal" },
-  { image: "/images/socios/socio4.webp", name: "Socio 4", role: "Socia principal" },
-  { image: "/images/socios/socio3.webp", name: "Socio 3", role: "Socio" },
-  { image: "/images/socios/socio2.webp", name: "Socio 2", role: "Socio" },
-  { image: "/images/socios/socio1.webp", name: "Socio 1", role: "Socio" },
+  {
+    image: "/images/socios/socio6.webp",
+    name: "Felipe Vásquez",
+    role: "Gerente General & Co Founder",
+    bio: "Licenciado en Ciencias de la Administración, Universidad Andrés Bello. Técnico Financiero, Instituto de Estudios Bancarios Guillermo Subercaseaux. Acreditado CAMV, con más de 15 años de experiencia en la industria bancaria y servicios financieros en Chile. Empresario.",
+  },
+  {
+    image: "/images/socios/socio5.webp",
+    name: "Daniela Recabal",
+    role: "Co Founder & Gestor Patrimonial Senior",
+    bio: "Acreditada CAMV, con más de 15 años de experiencia en servicios financieros, banca e inversiones en instituciones como Scotiabank y Sura, entre otros.",
+  },
+  {
+    image: "/images/socios/socio4.webp",
+    name: "Luz María Gutiérrez",
+    role: "Co Founder & Gestor Patrimonial Senior",
+    bio: "Acreditada CAMV, con 21 años de experiencia en banca e inversiones locales y offshore en instituciones financieras como Bice y Citibank.",
+  },
+  {
+    image: "/images/socios/socio1.webp",
+    name: "Gonzalo Jofré",
+    role: "Co-fundador & Director",
+    bio: "REKVAL Global SpA. Senior Wealth Manager. Certificado CMV.",
+  },
+  {
+    image: "/images/socios/socio2.webp",
+    name: "Giancarlo Coiro",
+    role: "Co-fundador & Director",
+    bio: "REKVAL Global SpA. Ingeniero Civil Industrial. Gestor Patrimonial.",
+  },
+  {
+    image: "/images/socios/socio3.webp",
+    name: "Mariano Cerda",
+    role: "Co-fundador & Director",
+    bio: "REKVAL Global SpA. Ingeniero Comercial. Gestor Patrimonial.",
+  },
 ];
 
 const filosofia = [
@@ -94,6 +124,7 @@ const filosofia = [
                 </div>
                 <span>{socio.role}</span>
                 <h3>{socio.name}</h3>
+                <p>{socio.bio}</p>
               </article>
             ))}
           </div>
@@ -302,7 +333,7 @@ const filosofia = [
   }
 
   .partner-card {
-    min-height: 420px;
+    min-height: 560px;
     padding: 34px;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.08);
@@ -345,6 +376,13 @@ const filosofia = [
     font-size: 28px;
     line-height: 1.08;
     letter-spacing: -0.04em;
+  }
+
+  .partner-card p {
+    margin: 18px 0 0;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 15px;
+    line-height: 1.62;
   }
 
   .philosophy-section {
